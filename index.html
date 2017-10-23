@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Know Your Procedures SCR/SMA Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            Know Your Procedures
+            <br /> Slot Messages Generator
+        </div>
+        <div class="headingExplanation">brought to you by
+            <a href="http://cargoair.bg" target="_blank">Cargo Air</a> Dispatch Team</div>
+    </header>
+    <main>
+        <form class="Inputs">
+            <table>
+                <tr>
+                    <td class="DispoPaste" colspan="5">
+                        <textarea name="DispoPaste" id="DispoPaste" placeholder="Raw paste from DISPO" id="DispoPaste" cols="30" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AC Reg</td>
+                    <td colspan="4">
+                        <select id="AcSel">
+                            <option value="" disabled selected>Select AC Reg</option>
+                            <option value="LZ-CGO">LZ-CGO</option>
+                            <option value="LZ-CGP">LZ-CGP</option>
+                            <option value="LZ-CGQ">LZ-CGQ</option>
+                            <option value="LZ-CGR">LZ-CGR</option>
+                            <option value="LZ-CGS">LZ-CGS</option>
+                            <option value="LZ-CGT">LZ-CGT</option>
+                            <option value="LZ-CGU">LZ-CGU</option>
+                            <option value="LZ-CGV">LZ-CGV</option>
+                            <option value="LZ-CGW">LZ-CGW</option>
+                            <option value="LZ-CGX">LZ-CGX</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="Legend">
+                        <table class="SingleFlightInput">
+                            <tr>
+                                <td>Leg Number</td>
+                            </tr>
+                            <tr>
+                                <td>Flight Number </td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                            </tr>
+                            <tr>
+                                <td>STD</td>
+                            </tr>
+                            <tr>
+                                <td>AOD</td>
+                            </tr>
+                            <tr>
+                                <td>AOA</td>
+                            </tr>
+                            <tr>
+                                <td>STA</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td id="0">
+                        <table class="SingleFlightInput">
+                            <tr>
+                                <td>First Leg</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="FltNr" class="FltNr" placeholder="Flight Number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Date" class="Date" placeholder="Date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Std" class="Std" placeholder="STD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aod" class="Aod" placeholder="AOD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aoa" class="Aoa" placeholder="AOA">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Sta" class="Sta" placeholder="STA">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td id="1">
+                        <table class="SingleFlightInput">
+                            <tr>
+                                <td>Second Leg</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="FltNr" class="FltNr" placeholder="Flight Number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Date" class="Date" placeholder="Date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Std" class="Std" placeholder="STD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aod" class="Aod" placeholder="AOD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aoa" class="Aoa" placeholder="AOA">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Sta" class="Sta" placeholder="STA">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td id="2">
+                        <table class="SingleFlightInput">
+                            <tr>
+                                <td>Third Leg</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="FltNr" class="FltNr" placeholder="Flight Number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Date" class="Date" placeholder="Date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Std" class="Std" placeholder="STD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aod" class="Aod" placeholder="AOD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aoa" class="Aoa" placeholder="AOA">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Sta" class="Sta" placeholder="STA">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td id="3">
+                        <table class="SingleFlightInput">
+                            <tr>
+                                <td>Third Leg</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="FltNr" class="FltNr" placeholder="Flight Number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Date" class="Date" placeholder="Date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Std" class="Std" placeholder="STD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aod" class="Aod" placeholder="AOD">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Aoa" class="Aoa" placeholder="AOA">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Sta" class="Sta" placeholder="STA">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <button type="button" id="NewSlotMsg">New Slot Messages</button>
+            <button type="button" id="DelSlotMsg">Delete Slot Messages</button>
+        </form>
+    </main>
+    <footer>
+        <button type="button">Know Your Procedures</button>
+    </footer>
+</body>
+
+</html>

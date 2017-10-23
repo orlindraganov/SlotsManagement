@@ -1,0 +1,12 @@
+body {
+    font-family: "Verdana", sans-serif;
+}
+
+.DispoPaste textarea {
+    width: 100%;
+    resize: none;
+}
+
+#AcSel {
+    width: 100%;
+}
