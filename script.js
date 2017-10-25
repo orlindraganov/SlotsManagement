@@ -29,7 +29,18 @@ document.addEventListener('DOMContentLoaded', function () {
     delBtn.addEventListener('click', createDelSlotMessage);
 }, false);
 
+function createNewSlotMessage() {
+    var airports = document.getElementById("airports");
+    airports = JSON.parse(airports);
 
+    var data = document.getElementById("data");
+    data = JSON.parse(data);
+}
+
+function createDelSlotMessage() {
+    //TODO
+    
+}
 
 function parseDispo(rawData) {
     let rows = rawData.split('\n')
