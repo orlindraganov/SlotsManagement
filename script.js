@@ -1,5 +1,5 @@
 class Flight {
-    constructor(tailNr, fltNr, date, std, aod, aoa, sta, purpose) {
+    constructor(tailNr, fltNr, date, std, aod, aoa, sta, purpose = 'F') {
         this.tailNr = tailNr;
         this.fltNr = fltNr;
         this.date = parseDate(date);
@@ -30,13 +30,26 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 function createNewSlotMessage() {
+    var tailNr = document.getElementById("AcSel").value;
 
-    
+    var flights = [];
+
+    for (var index = 0; index < 4; index++) {
+
+        var input = document.getElementById(index);
+
+        if (!input.children[1]) {
+            break;
+        }
+
+        let currentFlight = new Flight(tailNr, input.children[1], input.children[2], input.children[3], input.children[4], input.children[5], input.children[6]);
+    }
+
 }
 
 function createDelSlotMessage() {
     //TODO
-    
+
 }
 
 function parseDispo(rawData) {
@@ -140,4 +153,26 @@ function addMonthToDate(date) {
 
     let fullDate = date + month + year;
     return fullDate;
+}
+
+function calculateSeats(tailNr) {
+    var numberOfSeats;
+
+    for (var index = 0; index < data.aircraft.length; index++) {
+        if (data.aircraft[index] == tailNr) {
+            numberOfSeats = data.aircraft[index].seats;
+            return numberOfSeats
+        }
+    }
+}
+
+function calculateType(tailNr) {
+    var acType;
+
+    for (var index = 0; index < data.aircraft.length; index++) {
+        if (data.aircraft[index] == tailNr) {
+            acType = data.aircraft[index].type;
+            return numberOfSeats
+        }
+    }
 }
