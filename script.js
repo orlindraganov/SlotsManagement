@@ -30,11 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 function createNewSlotMessage() {
-    var airports = document.getElementById("airports");
-    airports = JSON.parse(airports);
 
-    var data = document.getElementById("data");
-    data = JSON.parse(data);
+    
 }
 
 function createDelSlotMessage() {
